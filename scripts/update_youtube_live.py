@@ -11,8 +11,8 @@ END = "# <<< YOUTUBE LIVE: GERARD ROMERO <<<"
 def resolve_live_url():
     cmd = [
         "yt-dlp",
-        "--no-warnings",
         "--no-playlist",
+        "--extractor-args", "youtube:player_client=web_safari",
         "-f", "best[protocol^=m3u8]/best",
         "--get-url",
         CHANNEL_PAGE,
