@@ -38,7 +38,7 @@ target_url = stream_url or CHANNEL_PAGE
 status = "EN DIRECTE" if stream_url else "OFFLINE"
 
 block = f"""{START}
-#EXTINF:-1 tvg-name="Gerard Romero" tvg-language="Spanish" group-title="Castellà",Gerard Romero ({status})
+#EXTINF:-1 tvg-name="Gerard Romero" tvg-language="Spanish" group-title="YouTube",Gerard Romero ({status})
 {target_url}
 {END}"""
 
